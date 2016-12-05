@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string" />
+    <attr name="titleTextColors" format="color" />
+    <attr name="titleTextSize" format="dimension" />
+    <!-- 一共有：string,color,demension,integer,enum,reference,float,boolean,fraction,flag; -->
+
+    <declare-styleable name="myTextView">
+        <attr name="titleText" />
+        <attr name="titleTextColors"/>
+        <attr name="titleTextSize"/>
+    </declare-styleable>
+
+    <!-- 吸顶 -->
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+</resources>
