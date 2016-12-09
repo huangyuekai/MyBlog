@@ -3,6 +3,7 @@ package com.blog.ken.myblog;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
@@ -57,11 +58,12 @@ public class StickyScrollViewActivity extends AppCompatActivity implements View.
     }
 
     /**
-     * 获取状态栏高度
+     * 获取状态栏高度 px
      * @return
      */
     private int getStatusHeight() {
         int resourceId = StickyScrollViewActivity.this.getResources().getIdentifier("status_bar_height", "dimen", "android");
+        Log.e("高度：",getResources().getDimensionPixelSize(resourceId)+"");
         return getResources().getDimensionPixelSize(resourceId);
 
     }
